@@ -40,7 +40,7 @@ def calculate_relative_accumulated_frecuency(data):
     accumulated_frecuency = {} 
     acum = 0 
     for key in sorted(relative_frecuency.keys()): 
-        acum += relative_frecuency[key] 
+        acum += value 
         accumulated_frecuency[key] = acum 
     return accumulated_frecuency
   
@@ -60,20 +60,23 @@ def print_table(data):
     for key in sorted(absolute_frecuency.keys()):
         print(f"| {key:^5} | {absolute_frecuency[key]:^20} | {relative_frecuency[key]:^18.2f} | {accumulated_frecuency[key]:^19} | {relative_accumulated_frecuency[key]:^28.2f} |")
     
+    total_absolute_frecuency = sum(absolute_frecuency.values())
+    print("--------------------------------------------------------------------------------------------------------------")
+    print(f"| {'Total':^5} | {total_absolute_frecuency:^20} | {'':^18} | {'':^19} | {'':^28} |")
     print("--------------------------------------------------------------------------------------------------------------")
   
-data = [2, 3, 4, 1, 5, 0, 1, 1, 1, 5, 2, 2, 3, 2, 2, 2, 1, 0, 1, 3, 1, 3, 4, 1, 1, 2, 3] ## Escribir tus numeros!!  
+data = [31, 28, 28, 31, 32, 31, 30, 31, 31, 27, 28, 29, 30, 32, 31, 30, 30, 30, 29 ,29, 30, 30, 31, 30, 31, 30, 31, 34, 32, 33, 29] ## Escribir tus numeros!!  
 
+print_table(data) 
+print("Numeros ordenados: ", order_numbers(data))
+#orderre_data = order_numbers(data)
+    
+''' Testing the functions 
 result = calculate_absolute_frecuency(data) 
 print(result) 
- 
 result = calculate_relative_frecuency(data) 
 print(result)   
- 
 result = calculate_accumulated_frecuency(data) 
 print(result) 
- 
 result = calculate_relative_accumulated_frecuency(data) 
-print(result) 
- 
-print_table(data)
+print(result) '''
