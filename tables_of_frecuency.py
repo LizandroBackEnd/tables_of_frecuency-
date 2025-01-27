@@ -136,8 +136,9 @@ def print_table():
 #    18,17,24,19,28,21,31,13,12,38,14,23,45,19,33,34,28,25,26,7,
 #    29,11,22,9,43,36,10,4,43,30,43,29,24,29,19,18,9,36,35,10
 # ]
-
-data = [1.7, 1.6, 1.9, 1.8 ,1.9 , 1.7 , 1.8, 1.6, 1.9, 1.7, 1.9, 1.8, 1.9, 1.8 , 1.6 , 1.8, 1.9 ,1.7, 1.9 ,1 ] ## Escribir tus numeros!! 
+ 
+#size_numbers = print("Ingrese sus numeros :", len(input(data)))
+data = [31, 28, 28, 31, 32, 31, 30, 31, 31, 27, 28, 29, 30, 32, 31, 30, 30, 30, 29 ,29, 30, 30, 31, 30, 31, 30, 31, 34, 32, 33, 29] ## Escribir tus numeros!! 
 
 intervals = defined_intervals(data, decimal_places=2)
 real_limits_values = real_limits(data, gap=0.5)
