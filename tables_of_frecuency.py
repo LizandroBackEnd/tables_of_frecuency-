@@ -137,7 +137,7 @@ def print_table():
 #    29,11,22,9,43,36,10,4,43,30,43,29,24,29,19,18,9,36,35,10
 # ]
 
-data = [1.7, 1.6, 1.9, 1.8 ,1.9 , 1.7 , 1.8, 1.6, 1.9, 1.7, 1.9, 1.8, 1.9, 1.8 , 1.6 , 1.8, 1.9 ,1.7, 1.9 ,1.8 ] ## Escribir tus numeros!! 
+data = [1.7, 1.6, 1.9, 1.8 ,1.9 , 1.7 , 1.8, 1.6, 1.9, 1.7, 1.9, 1.8, 1.9, 1.8 , 1.6 , 1.8, 1.9 ,1.7, 1.9 ,1 ] ## Escribir tus numeros!! 
 
 intervals = defined_intervals(data, decimal_places=2)
 real_limits_values = real_limits(data, gap=0.5)
